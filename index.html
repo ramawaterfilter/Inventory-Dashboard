@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rama Inventory Control</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+  <aside class="sidebar">
+    <div class="brand"><div class="brand-mark">R</div><div><b>RAMA</b><span>Inventory Control</span></div></div>
+    <div class="workspace"><span class="dot"></span> Production Workspace <span class="chev">⌄</span></div>
+    <nav>
+      <button class="nav active" data-page="dashboard"><span>▦</span> Dashboard</button>
+      <button class="nav" data-page="inventory"><span>▤</span> Inventory</button>
+      <button class="nav" data-page="movements"><span>↕</span> Movements</button>
+      <button class="nav" data-page="inbound"><span>⇢</span> Inbound</button>
+      <button class="nav" data-page="rules"><span>◈</span> Stock Rules</button>
+      <button class="nav" data-page="pipelines"><span>◌</span> Pipelines</button>
+      <button class="nav" data-page="users"><span>♙</span> Users & Roles</button>
+      <button class="nav" data-page="reports"><span>▥</span> Reports</button>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="sync-card"><div class="mini-label">DATA PIPELINE</div><b>All sources healthy</b><small>Last sync 2 min ago</small></div>
+      <div class="user-mini"><div class="avatar">NP</div><div><b>Nice Pal</b><small>Administrator</small></div><span>⋮</span></div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div class="mobile-brand"><div class="brand-mark">R</div><b>RAMA</b></div>
+      <div class="crumbs"><span>Workspace</span><b>/</b><strong id="page-title">Dashboard</strong></div>
+      <div class="top-actions">
+        <button class="icon-btn" title="Notifications">♢<i></i></button>
+        <button class="date-btn">23 Sep 2026 <span>⌄</span></button>
+        <div class="avatar">NP</div>
+      </div>
+    </header>
+
+    <div class="content" id="content"></div>
+  </main>
+</div>
+
+<div class="modal hidden" id="modal">
+  <div class="modal-card" id="modal-content"></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
